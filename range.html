@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validate()
+        {
+            var un = document.getElementById("uname");
+            var pa = document.getElementById("pass");
+
+            // if(un.value.trim()==""){
+            //     alert("user")
+            // }
+            // else if(pa.value.trim()==""){
+            //     alert("pass")
+            // }
+            if(pa.value.lenght<5){
+                alert("under 5")
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="uname" /><br>
+            <input type="password" id="pass"/><br>
+            <button type="button" onclick="validate()">click</button>
+        </form>
+    </body>
+</html>

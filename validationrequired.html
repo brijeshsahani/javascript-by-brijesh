@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validate(){
+            var un = document.getElementById("uname").value;
+            var pa = document.getElementById("pass").value;
+            if(un=="" || pa=="")
+            {
+                 alert("empty");
+              //  document.getElementById("lbl").innerHTML="invalid";
+                document.getElementById("lbl").style.visibility="visible";
+            }
+            else
+            {
+                alert("done");
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="uname" />
+            <label id="lbl" style="color: brown; visibility: hidden">Invalid</label>
+            <input type="password" id="pass"/>
+            <button type="button" onclick="validate()">click</button>//not refresh page
+        </form>
+    </body>
+</html>

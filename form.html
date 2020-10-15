@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>hi</title>
+
+            <script type="text/javascript">
+             function fn1()
+             {
+                 var showtxt = document.getElementById("txt1").value;
+                 alert(showtxt);
+                 var showradio = document.getElementById("r1");
+                
+                 var showradio1 = document.getElementById("r2");
+                if(showradio.checked==true)
+                {
+                    alert(showradio.value);
+                }
+                else if(showradio1.checked==true)
+                {
+                    alert(showradio1.value);
+                }
+
+                var slect = document.getElementById("slt");
+                alert(slect.options[slect.selectedIndex].value);
+             }
+            </script>
+    </head>
+    <body>
+       <input type="text" id="txt1">
+      male <input type="radio" id="r1" value="male" name="g1">
+       female<input type="radio" id="r2" value="female" name="g1"> 
+       <select id="slt">
+           <option value="hi">hi</option>
+           <option value="bye">bye</option>
+       </select>
+       <button onclick="fn1()">
+           click
+       </button>
+    </body>
+
+</html>

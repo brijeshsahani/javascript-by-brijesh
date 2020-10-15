@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validate()
+        {
+           var paa = document.getElementById("pass");
+           
+            
+           if(paa.value.length<5)
+           {
+               alert("short");
+               document.getElementById("vv").style.visibility="visible";
+           }
+         
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+          
+            <input type="password" id="pass">
+            <label id="vv" style="color: crimson; visibility: hidden">invalid</label>
+            <button type="button" onclick="validate()">click</button>
+        </form>
+    </body>
+</html>

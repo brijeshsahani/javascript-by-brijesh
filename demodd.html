@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validate()
+        {
+           var unamess=document.getElementById("uname").value;
+           console.log(unamess);
+           var hh = /ee/; // must required ee in textbox
+           var evv= /[a-x A-X]00/;//range and charset
+           var evvd= /[1-9]abc/;//range and charset
+           var evvd= /^[7-9]\d{9}$/;//for mobile no
+           if(hh.test(unamess))
+           {
+              document.getElementById("eeee").style.visibility="visible";
+           }
+           else{
+            document.getElementById("eeeeee").style.visibility="visible";
+
+           }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="uname" /><br>
+            <label id="eeee" style="color: crimson; visibility: hidden;">valid</label><br>
+            <label id="eeeeee" style="color: crimson; visibility: hidden;">invalid</label><br>
+          
+            <button type="button" onclick="validate()">click</button>
+        </form>
+    </body>
+</html>

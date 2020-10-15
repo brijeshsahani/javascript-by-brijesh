@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>hi</title>
+
+            <script type="text/javascript">
+              function fn1()
+              {
+               var m= document.getElementById("m");
+               var f=document.getElementById("f");
+               if(m.checked==true)
+               {
+                   alert(m.value);
+               }
+               else if(f.checked==true)
+               {
+                   alert(f.value)
+               }
+              
+              }
+            </script>
+    </head>
+    <body>
+        male<input type="radio"  id="m" name="mm" value="male">
+        
+       female <input type="radio" id="f" name="mm" value="female">
+       <button onclick="fn1()" >click</button>
+    </body>
+
+</html>
